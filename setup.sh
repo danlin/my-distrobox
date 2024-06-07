@@ -19,7 +19,7 @@ fi
 yes | yay -Syu --needed --noconfirm - < ./aur-packages
 
 echo "Install tmux Plugin Manager"
-if [ ! -d ~/.tmux/plugins/tpm ]
+if [ ! -d ~/.tmux/plugins/tpm ]; then
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 NO_INTERACTIVE=true sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
@@ -33,4 +33,5 @@ distrobox-export --app "Android Studio"
 distrobox-export --app DataGrip
 distrobox-export --app Fleet
 distrobox-export --app RustRover
+distrobox-export --app GoLand
 
