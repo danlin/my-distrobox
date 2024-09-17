@@ -50,5 +50,3 @@ fi
 
 echo "Create Application Links"
 distrobox-export --app neovide
-distrobox-export --app Fleet
-distrobox-export --app RustRover
